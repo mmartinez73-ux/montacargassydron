@@ -1,15 +1,7 @@
 # ============================================
 # MÓDULO 7: APP WEB CON STREAMLIT
 # ============================================
-import os
-import subprocess
-import sys
 
-# Este bloque obliga a Streamlit a instalar matplotlib si no existe
-try:
-    import matplotlib
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
 import streamlit as st
 import pandas as pd
 import matplotlib
